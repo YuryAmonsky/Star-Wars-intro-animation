@@ -1,0 +1,123 @@
+@keyframes a_preamble {
+  0% {
+    opacity: 0;
+  }
+  25% { 
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes a_logo {
+  from {
+    visibility: visible;
+    transform: scale(10);
+  }
+  to {
+    transform: scale(0.01);
+    visibility: hidden;
+  }  
+}
+
+@keyframes a_text {
+  100% {
+    transform: rotateX(90deg) translateY(-2500px);
+    visibility: hidden;
+  }
+}
+
+@keyframes a_text_scale {
+  90%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(0.5);
+  }
+}
+
+.space {
+  width: 100vw;
+  height: 100vh;  
+  position: fixed;
+  top: 0;
+  left: 0;  
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+}
+
+.preamble {
+  width: 57%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 35%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-weight: 200;
+  text-align: left;
+  color: #18abfe;
+  animation: a_preamble 5s forwards;
+
+}
+
+.logo {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-image: url(../images/Star_Wars-Logo.wine.svg);
+  background-position: center;
+  background-size: contain;
+  visibility: hidden;
+  animation: a_logo 11s forwards 5.8s;
+}
+.text-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 200px;
+  perspective-origin: center 30%;
+  -webkit-perspective: 300px;  
+}
+
+.text {
+  position: absolute;
+  top: 100vh;
+  left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;  
+  font-weight: 400;
+  line-height: 110px;
+  color: #ab8100;
+  text-align: center;   
+}
+
+.part1{
+  transform: rotateX(100deg) translateY(200px);
+  animation: a_text 73s linear forwards 16s;
+}
+
+.part2{
+  transform: rotateX(100deg) translateY(300px);
+  animation: a_text 74s linear forwards 33s;
+}
+
+.part3{
+  transform: rotateX(100deg) translateY(300px);
+  animation: a_text 74s linear forwards 50s;
+}
