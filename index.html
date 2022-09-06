@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,35 @@
   <link rel="stylesheet" href="style/index.css">
   <title>Вступление к фильму Звёздные войны</title>
 </head>
+
 <body>
   <div class="space">
-    <p class="preamble"> Давным давно в далёкой,<br/> далёкой галактике....</p>  
+    <p class="preamble"> Давным давно в далёкой,<br /> далёкой галактике....</p>
     <div class="logo"></div>
     <div class="text-container">
-      <div class="text part1">Джедай<br/><br/>Расцвет галактической республики.<br/>
-        В это время стабильности и мира<br/> республика гармонично управляется<br/> 
-        сенатом и выборным канцлером.<br/><br/>
+      <div class="text part1">Джедай<br /><br />Расцвет галактической республики.<br />
+        В это время стабильности и мира<br /> республика гармонично управляется<br />
+        сенатом и выборным канцлером.<br /><br />
       </div>
-      <div class="text part2">Орден джедаев растёт и развивается<br/>
-        с каждым днём. Старые, но мудрые<br/> мастера - джедаи обучают молодых<br/>
-       и талантливых, будущих борцов за<br/> свободу и независимость в республике.<br/><br/>
-      </div>  
-      <div class="text part3">  
-        В это же самое время на одной<br/> неотдаленной от центра планете<br/> растёт
-        будущий джедай-<br/> Кавимен Линсдовин, которому<br/> суждено было внести свой 
-        вклад в<br/> развитие Галактической республики....
-      </div>  
-    </div>    
+      <div class="text part2">Орден джедаев растёт и развивается<br />
+        с каждым днём. Старые, но мудрые<br /> мастера - джедаи обучают молодых<br />
+        и талантливых, будущих борцов за<br /> свободу и независимость в республике.<br /><br />
+      </div>
+      <div class="text part3">
+        В это же самое время на одной<br /> неотдаленной от центра планете<br /> растёт
+        будущий джедай-<br /> Кавимен Линсдовин, которому<br /> суждено было внести свой
+        вклад в<br /> развитие Галактической республики....
+      </div>
+    </div>
+    <div class="warning">
+      <p class="warning__text">Проверьте громкость </br> вашего аудиоустройства</p>
+      <button class="warning__button" name="wrning-button" type="button">ОК</button>
+    </div>
   </div>
-  
+  <audio class="audio" preload="auto">
+    <source src="media/star-wars-main-title.mp3" type="audio/mp3">
+  </audio>
+  <script src="./index.js"></script>
 </body>
+
 </html>
